@@ -20,21 +20,23 @@ Vamos usar como exemplo, um CPF fictício "529.982.247-25".
 
 ### Validação do primeiro dígito
 Primeiramente multiplica-se os 9 primeiros dígitos pela sequência decrescente de números de 10 a 2 e soma os resultados.
-5*10  +  2*9  +  9*8  +  9*7  +  8*6  +  2*5  +  2*4  +  4*3  +  7*2  =  295
+5x10  +  2x9  +  9x8  +  9x7  +  8x6  +  2x5  +  2x4  +  4x3  +  7x2  =  295
 
-O próximo passo da verificação também é simples, basta multiplicar esse resultado por 10 e dividir por 11.
-295 * 10 / 11 (O resultado que interessa é o RESTO da divisão).
+O próximo passo da verificação também é simples, basta multiplicar esse resultado por 10 e dividir por 11. 
+
+295 x 10 / 11 (O resultado que interessa é o RESTO da divisão).
 O resultado da divisão é 268 e o RESTO é 2.
 
 Se ele for igual ao primeiro dígito verificador, a primeira parte da validação está correta.
 Isso significa que o CPF exemplo passou na validação do primeiro dígito.
 
 ### Validação do segundo dígito
-A validação do segundo dígito é semelhante à primeira,porém considerar os 9 primeiros dígitos, mais o primeiro dígito verificador, e multiplicar esses 10 números pela sequencia decrescente de 11 a 2.
-5*11  +  2*10  +  9*9  +  9*8  +  8*7  +  2*6  +  2*5  +  4*4  +  7*3  +  2*2  =  347
+A validação do segundo dígito é semelhante à primeira, porém considerar os 9 primeiros dígitos, mais o primeiro dígito verificador, e multiplicar esses 10 números pela sequencia decrescente de 11 a 2. 
+
+5x11  +  2x10  +  9x9  +  9x8  +  8x7  +  2x6  +  2x5  +  4x4  +  7x3  +  2x2  =  347
 
 Seguindo o mesmo processo da primeira verificação, multiplicar por 10 e dividir por 11.
-347 * 10 / 11
+347 x 10 / 11 
 O resultado da divisão é 315 e o RESTO é 5.
 
 Verificar se ele corresponde ao segundo dígito verificador.
@@ -54,14 +56,14 @@ Um meio interessante para a conferência do número de um CPF é identificar o E
 Esse número corresponde ao último algarismo anterior aos dois dígitos de controle. No exemplo CPF nº 000.000.006-00, o número 6 mostra que esse documento foi emitido no estado de Minas Gerais.
 
 Veja abaixo os códigos correspondentes a outros estados brasileiros:
-1 - Distrito Federal, Goiás, Mato Grosso do Sul e Tocantins;
-2 - Pará, Amazonas, Acre, Amapá, Rondônia e Roraima;
-3 - Ceará, Maranhão e Piauí;
-4 - Pernambuco, Rio Grande do Norte, Paraíba e Alagoas;
-5 - Bahia e Sergipe;
-6 - Minas Gerais;
-7 - Rio de Janeiro e Espírito Santo;
-8 - São Paulo;
-9 - Paraná e Santa Catarina;
-0 - Rio Grande do Sul.
+- 1 - Distrito Federal, Goiás, Mato Grosso do Sul e Tocantins;
+- 2 - Pará, Amazonas, Acre, Amapá, Rondônia e Roraima;
+- 3 - Ceará, Maranhão e Piauí;
+- 4 - Pernambuco, Rio Grande do Norte, Paraíba e Alagoas;
+- 5 - Bahia e Sergipe;
+- 6 - Minas Gerais;
+- 7 - Rio de Janeiro e Espírito Santo;
+- 8 - São Paulo;
+- 9 - Paraná e Santa Catarina;
+- 0 - Rio Grande do Sul.
 
