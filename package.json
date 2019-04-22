@@ -1,0 +1,24 @@
+{
+  "name": "bibliotecajs",
+  "version": "1.0.0",
+  "description": "Validador de CPF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laizaraujo8/bibliotecajs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laizaraujo8/bibliotecajs/issues"
+  },
+  "homepage": "https://github.com/laizaraujo8/bibliotecajs#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}

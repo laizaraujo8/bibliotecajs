@@ -20,6 +20,7 @@ Vamos usar como exemplo, um CPF fictício "529.982.247-25".
 
 ### Validação do primeiro dígito
 Primeiramente multiplica-se os 9 primeiros dígitos pela sequência decrescente de números de 10 a 2 e soma os resultados.
+
 5x10  +  2x9  +  9x8  +  9x7  +  8x6  +  2x5  +  2x4  +  4x3  +  7x2  =  295
 
 O próximo passo da verificação também é simples, basta multiplicar esse resultado por 10 e dividir por 11. 
@@ -36,6 +37,7 @@ A validação do segundo dígito é semelhante à primeira, porém considerar os
 5x11  +  2x10  +  9x9  +  9x8  +  8x7  +  2x6  +  2x5  +  4x4  +  7x3  +  2x2  =  347
 
 Seguindo o mesmo processo da primeira verificação, multiplicar por 10 e dividir por 11.
+
 347 x 10 / 11 
 O resultado da divisão é 315 e o RESTO é 5.
 
@@ -46,11 +48,12 @@ Observação Importante: Se o resto da divisão for igual a 10, ele é considera
 
 ### CPFs Inválidos Conhecidos
 Existe alguns casos de CPFs que passam nessa validação, mas que ainda são inválidos.
-É os caso dos CPFs com dígitos repetidos (111.111.111-11, 222.222.222-22, ...)
-Esses CPF atendem à validação, mas ainda são considerados inválidos.
+É o caso dos CPFs com dígitos repetidos (111.111.111-11, 222.222.222-22, ...)
+Esses CPFs atendem à validação, mas ainda são considerados inválidos.
 
 No algoritmo, é necessário verificar se todos os dígitos do CPF são iguais e, neste caso, considerar que ele é inválido.
 
+# Informação Complementar
 ### Como Conferir a Origem de um CPF
 Um meio interessante para a conferência do número de um CPF é identificar o ESTADO em que este foi emitido.
 Esse número corresponde ao último algarismo anterior aos dois dígitos de controle. No exemplo CPF nº 000.000.006-00, o número 6 mostra que esse documento foi emitido no estado de Minas Gerais.
