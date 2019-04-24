@@ -1,14 +1,12 @@
-// var chai = require('chai');
-// var expect = chai.expect;
-// var valid = require('../lib/index.js');
+var chai = require('chai');
+var expect = chai.expect;
+var valid = require('../lib/index.js');
 
-// describe('pokemon lib', () => {
-//     describe('pokemonBattle', () => {
-//         it('magikarp ganha de camerupt', () => {
-//         expect(Pokemon.pokemonBattle('magikarp', 'camerupt')).to.equal('magikarp');
-//         });
+describe('cpfValidator lib', () => {
+        it('resto igual a primeiro dígito', () => {
+        expect(valid.cpfValidator([9])).to.equal('true');
+        });
 
-//     });
 
-// });
+});
 
