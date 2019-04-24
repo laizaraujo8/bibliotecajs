@@ -16,7 +16,10 @@
     "url": "https://github.com/laizaraujo8/bibliotecajs/issues"
   },
   "homepage": "https://github.com/laizaraujo8/bibliotecajs#readme",
-  "dependencies": {},
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.12.4"

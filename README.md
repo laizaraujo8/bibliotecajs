@@ -14,7 +14,6 @@ O objetivo central deste projeto é construir uma biblioteca (library) que atend
 - .gitignore para ignorar node_modules ou outras pastas que não devem ser incluídas no controle de versões.
 
 # Algoritmo para Validar CPF
-O cálculo para validar um CPF é especificado pelo Ministério da Fazenda, que disponibiliza no próprio site a forma para validação de CPF.
 O CPF é formado por 11 dígitos numéricos que seguem a máscara "000.000.000-00", a verificação do CPF acontece utilizando os 9 primeiros dígitos e, com um cálculo simples, verificando o resultado corresponde aos dois últimos dígitos.
 Vamos usar como exemplo, um CPF fictício "529.982.247-25".
 
