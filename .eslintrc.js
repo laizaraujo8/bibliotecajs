@@ -1,54 +1,110 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es6": true
+    'env': {
+        'browser': true,
+        'commonjs': true,
+        'es6': true
     },
-    "extends": "eslint:recommended",
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+    'extends': 'eslint:recommended',
+    'globals': {
+        'Atomics': 'readonly',
+        'SharedArrayBuffer': 'readonly'
     },
-    "parserOptions": {
-        "ecmaVersion": 2018
+    'parserOptions': {
+        'ecmaVersion': 2018
     },
-    "rules": {
-        "indent": [
-            "error",
+    'rules': {
+        'indent': [
+            'error',
             2
         ],
-        "linebreak-style": [
-            "error",
-            "unix"
+        'linebreak-style': [
+            'error',
+            'unix'
         ],
-        "quotes": [
-            "error",
-            "double"
+        'quotes': [
+            'error',
+            'single'
         ],
-        "semi": [
-            "error",
-            "always"
+        'semi': [
+            'error',
+            'always'
         ],
-
-        "camelcase": 2,
-        "id-length": 2, 
-        "keyword-spacing": 2,
-        "space-infix-ops": 2,
-        "comma-spacing": 2,
-        "space-before-blocks": 2,
-        "spaced-comment": 2,
-        "key-spacing": 2,
-        "no-multi-spaces": 2,
-        "space-in-parens": 2,
-        "space-before-function-paren": 2,
-        "no-multiple-empty-lines": 2,
-        "padded-blocks": 2,
-        "quotes": 2,
-        "no-floating-decimal": 2,
-        "object-property-newline": 2,
-        "brace-style": 2,
-        "eqeqeq": 2,
-        "no-array-constructor": 2,
-        
+        'id-length': [
+            'error',
+            {'min': 2}
+        ],
+        'camelcase': [
+            'error',
+            {'properties': 'always'}
+        ],
+        'keyword-spacing': [
+            'error', 
+            { 'after': true }
+        ],
+        'space-infix-ops': [
+            'error', 
+            { 'int32Hint': false }
+        ],
+        'comma-spacing': [
+            'error', 
+            { before: false, after: true }
+        ],
+        'space-before-blocks': [
+            'error', 
+            'always'
+        ],
+        'spaced-comment': [
+            'error', 
+            'always'
+        ],
+        'key-spacing': [
+            'error', 
+            { 'afterColon': true }
+        ],
+        'no-multi-spaces': [
+            'error'
+        ],
+        'space-in-parens': [
+            'error', 
+            'never'
+        ],
+        'space-before-function-paren': [
+            'error', 
+            'never'
+        ],
+        'func-call-spacing': [
+            'error', 
+            'never'
+        ],
+        'no-multiple-empty-lines': [
+            'error', 
+            { 'max': 0 }
+        ],
+        'padded-blocks': [
+            'error', 
+            'never'
+        ],
+        'quotes':[
+            'error',
+            'single'
+        ],
+        'no-floating-decimal': [
+            'error'
+        ],
+        'object-property-newline': [
+            'error'
+        ],
+        'brace-style': [
+            'error', 
+            '1tbs'
+        ],
+        'eqeqeq': [
+            'error', 
+            'always', 
+            { 'null': 'ignore' }
+        ],
+        'no-array-constructor': [
+            'error'
+        ]
     }
 };

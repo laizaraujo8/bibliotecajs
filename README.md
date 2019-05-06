@@ -3,7 +3,7 @@ Projeto - Validador de CPF
 
 ## Desafio
 Implementar um validador de número de CPF.
-A biblioteca deverá validar o número do CPF através dos dígitos verificadores, utilizando a regra matemática específica e retornar true ou false de acordo com o caso.
+A biblioteca deve validar o número do CPF através dos dígitos verificadores, utilizando a regra matemática específica e retornar true ou false de acordo com o caso.
 
 O objetivo central deste projeto é construir uma biblioteca (library) que atenda aos requisitos do desafio detalhados abaixo.
 - README.md com descrição do módulo, instruções de instalação, uso e documentação da API.
@@ -52,20 +52,19 @@ Esses CPFs atendem à validação, mas ainda são considerados inválidos.
 
 No algoritmo, é necessário verificar se todos os dígitos do CPF são iguais e, neste caso, considerar que ele é inválido.
 
-# Informação Complementar
-### Como Conferir a Origem de um CPF
-Um meio interessante para a conferência do número de um CPF é identificar o ESTADO em que este foi emitido.
-Esse número corresponde ao último algarismo anterior aos dois dígitos de controle. No exemplo CPF nº 000.000.006-00, o número 6 mostra que esse documento foi emitido no estado de Minas Gerais.
+#Validador de CPF v.1.0.0
+A biblioteca valida o número do CPF através dos dígitos verificadores, utilizando a regra matemática específica e retornar true ou false de acordo com o caso.
 
-Veja abaixo os códigos correspondentes a outros estados brasileiros:
-- 1 - Distrito Federal, Goiás, Mato Grosso do Sul e Tocantins;
-- 2 - Pará, Amazonas, Acre, Amapá, Rondônia e Roraima;
-- 3 - Ceará, Maranhão e Piauí;
-- 4 - Pernambuco, Rio Grande do Norte, Paraíba e Alagoas;
-- 5 - Bahia e Sergipe;
-- 6 - Minas Gerais;
-- 7 - Rio de Janeiro e Espírito Santo;
-- 8 - São Paulo;
-- 9 - Paraná e Santa Catarina;
-- 0 - Rio Grande do Sul.
+###Como instalar:
+$  npm install bibliotecajs
+Como utilizar:
+node
+> node
+> const CPF = require('bibliotecajs');
+> CPF.cpfValidator('04114512608'))
+> sudo npm test
+
+#Roadmap oficial do projeto
+versão 1.0.0 (released)
+- funcionalidades: Verifica se um número de CPF é válido ou não.
 
