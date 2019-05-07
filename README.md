@@ -52,19 +52,17 @@ Esses CPFs atendem à validação, mas ainda são considerados inválidos.
 
 No algoritmo, é necessário verificar se todos os dígitos do CPF são iguais e, neste caso, considerar que ele é inválido.
 
-#Validador de CPF v.1.0.0
-A biblioteca valida o número do CPF através dos dígitos verificadores, utilizando a regra matemática específica e retornar true ou false de acordo com o caso.
+# Validador de CPF v.1.0.0
+Valida o número do CPF através dos dígitos verificadores, utilizando a regra matemática específica e retorna true ou false de acordo com o caso.
 
-###Como instalar:
-$  npm install bibliotecajs
+### Como instalar:
+$  npm install cpfvalidator-la
 Como utilizar:
-node
-> node
-> const CPF = require('bibliotecajs');
-> CPF.cpfValidator('04114512608'))
-> sudo npm test
 
-#Roadmap oficial do projeto
+const CPF = require('cpfvalidator-la');
+console.log(CPF.cpfValidator('04114512608')))
+
+# Roadmap oficial do projeto
 versão 1.0.0 (released)
 - funcionalidades: Verifica se um número de CPF é válido ou não.
 
