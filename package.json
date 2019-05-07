@@ -2,7 +2,7 @@
   "name": "cpfvalidator-la8",
   "version": "1.0.0",
   "description": "Validador de CPF",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "nyc mocha"
   },

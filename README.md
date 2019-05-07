@@ -61,9 +61,9 @@ $  npm install cpfvalidator-la8
 ### Como utilizar:
 const CPF = require('cpfvalidator-la8');
 
-console.log(CPF.cpfValidator('04114512608')))
+console.log(CPF.cpfValidator('04114512608'))
 
 # Roadmap oficial do projeto
-versão 1.0.0 (released)
+versão 1.0.1 (released)
 - funcionalidades: Verifica se um número de CPF é válido ou não.
 
