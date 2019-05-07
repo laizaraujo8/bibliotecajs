@@ -57,8 +57,8 @@ Valida o número do CPF através dos dígitos verificadores, utilizando a regra 
 
 ### Como instalar:
 $  npm install cpfvalidator-la
-Como utilizar:
 
+### Como utilizar:
 const CPF = require('cpfvalidator-la');
 console.log(CPF.cpfValidator('04114512608')))
 
