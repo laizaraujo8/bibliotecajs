@@ -56,10 +56,10 @@ No algoritmo, é necessário verificar se todos os dígitos do CPF são iguais e
 Valida o número do CPF através dos dígitos verificadores, utilizando a regra matemática específica e retorna true ou false de acordo com o caso.
 
 ### Como instalar:
-$  npm install cpfvalidator-la
+$  npm install cpfvalidator-la8
 
 ### Como utilizar:
-const CPF = require('cpfvalidator-la');
+const CPF = require('cpfvalidator-la8');
 
 console.log(CPF.cpfValidator('04114512608')))
 
