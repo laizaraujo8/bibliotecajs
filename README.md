@@ -60,6 +60,7 @@ $  npm install cpfvalidator-la
 
 ### Como utilizar:
 const CPF = require('cpfvalidator-la');
+
 console.log(CPF.cpfValidator('04114512608')))
 
 # Roadmap oficial do projeto
